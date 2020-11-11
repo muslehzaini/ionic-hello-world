@@ -14,7 +14,15 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Hello World</h1>
+    <p>{{count}}</p>
+    <p>{{message}}</p>
+    <ion-button color="primary" (click)="incrementPressed()">Increase</ion-button>
+    <ion-button color="secondary" (click)="decrementPressed()">Decrease</ion-button>
+    <ion-button color="tertiary" (click)="resetPressed()">Reset</ion-button>
+    <ion-button color="danger" (click)="alertPressed()">Show Alert</ion-button>
+    <ion-button color="primary" (click)="toastPressed()">Show Toast</ion-button>
+    <ion-button color="secondary" (click)="actionPressed()">Show Action Sheet</ion-button>
+    
   </div>
 </ion-content>
